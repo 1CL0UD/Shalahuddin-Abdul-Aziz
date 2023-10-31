@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Quicksand:wght@500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+header.navbar-container .logo img {
+  width: 120px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #ff4b3e;
+  color: white;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  flex-direction: row;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+main .headline {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  padding: 40px;
+  background-color: #ff4b3e;
+  text-align: center;
+  color: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 1.25rem;
+}
+
+main .headline .headline-img {
+  flex: 1;
+  display: flex;
+}
+
+main .headline .headline-img img {
+  margin: auto;
+  min-width: 1cqh;
+  width: 200px;
+}
+
+main .headline .headline-desc {
+  flex: 1 1;
+}
+
+main .headline .headline-desc .title {
+  font-size: 2.5rem;
+  margin-block: 1rem;
+}
+
+main .headline .headline-desc p {
+  line-height: 1.7rem;
+  font-size: 1rem;
+}
+
+main .card-container {
+  font-size: 16px;
+  padding: 16px;
+  text-align: center;
+  color: black;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+main .card-container .card {
+  margin: 1rem;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+main .card-container .card .card-img i {
+  font-size: 128px;
+}
+
+main .card-container .card .card-img a {
+  color: black;
+  text-decoration: none;
+}
+
+main .card-container .card h2 {
+  margin: auto;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 16px;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+footer {
+  font-size: 16px;
+  padding: 12px;
+  background-color: #ff4b3e;
+  text-align: center;
+  color: white;
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header.navbar-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  header.navbar-container .logo img {
+    margin-bottom: 1rem;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header.navbar-container .nav-list li a {
+    padding: 0.5rem 1.5rem;
+    border-radius: 12px;
+  }
+
+  header.navbar-container .nav-list li:hover a {
+    background-color: transparent;
+    color: black;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  main .headline,
+  main .card-container {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  main .headline .headline-img img {
+    width: 60%;
+  }
+
+  main .headline .headline-desc .title {
+    font-size: 1.5rem;
+  }
+  main .headline p {
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+  }
+  main .headline .headline-desc p {
+    line-height: 1.2rem;
+    font-size: 0.7rem;
+  }
+
+  main .card-container .card {
+    padding: 1rem;
+  }
+
+  main .card-container .card .card-img i {
+    font-size: 64px;
+  }
+
+  main .card-container .card h2 {
+    margin: 0.5rem;
+    font-size: 0.8rem;
+  }
+  footer {
+    font-size: 0.6rem;
+  }
+  aside {
+    font-size: 14px;
+  }
+}
